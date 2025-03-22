@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="24e3c6a3b31a4408bd77b50fccc6ecc9" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Cleaning_Schedule" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Guest_Services" Width="1.5" PointX="10.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Guests" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Integrations" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Payments" Width="1.5" PointX="10.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Reservations" Width="1.5" PointX="8.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Room_Access" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Rooms" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Services" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Statistics_Hotel" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Users" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Cleaning_Schedule_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.FK_Cleaning_Schedule_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Guest_Services_Reservations_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Guest_Services_Services_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Reservations_Guests_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Room_Access_Guests_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Payments_Reservations_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Reservations_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.Room_Access_Rooms_FK" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Lysakovskiy_A_SModel.Status" Width="1.5" PointX="0.75" PointY="6.75" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.FK_Status_Cleaning_Schedule" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.FK_Reservations_Status" />
+        <AssociationConnector Association="Lysakovskiy_A_SModel.FK_Rooms_Status" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

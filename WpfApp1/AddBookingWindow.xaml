@@ -1,0 +1,109 @@
+﻿<Window x:Class="WpfApp1.AddBookingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AddBookingWindow" MinHeight="400" MinWidth="400" SizeToContent="WidthAndHeight">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+        <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Добавление записи"
+                FontFamily="Bahnschrift"
+                FontSize="24"
+                FontWeight="Bold"
+                Foreground="#333"
+                HorizontalAlignment="Center"
+                Margin="0,10"/>
+
+            <StackPanel Grid.Row="1" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                <TextBlock Text="Имя" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <TextBox x:Name="txtFirstName"
+                     Margin="0,5,0,10"
+                     Height="35"
+                     Background="#BFAA98"
+                     BorderBrush="#CCC"
+                     BorderThickness="1"/>
+
+                <TextBlock Text="Фамилия" FontSize="14" FontWeight="Bold" Foreground="#444"/>
+                <TextBox x:Name="txtLastName"
+                     Margin="0,5,0,10"
+                     Height="35"
+                     Background="#BFAA98"
+                     BorderBrush="#CCC"
+                     BorderThickness="1"/>
+
+                <TextBlock Text="Email" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <TextBox x:Name="txtEmail"
+                     Margin="0,5,0,10"
+                     Height="35"
+                     Background="#BFAA98"
+                     BorderBrush="#CCC"
+                     BorderThickness="1"/>
+
+                <TextBlock Text="Номер телефона" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <TextBox x:Name="txtPhoneNumber"
+                     Margin="0,5,0,10"
+                     Height="35"
+                     Background="#BFAA98"
+                     BorderBrush="#CCC"
+                     BorderThickness="1"/>
+
+                <TextBlock Text="Номер документа" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <TextBox x:Name="txtDocumentNumber"
+                     Margin="0,5,0,10"
+                     Height="35"
+                     Background="#BFAA98"
+                     BorderBrush="#CCC"
+                     BorderThickness="1"/>
+
+                <TextBlock Text="Этаж" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <ComboBox x:Name="floorComboBox"
+                    Margin="0,5,0,10"
+                    Height="35" SelectionChanged="floorComboBox_SelectionChanged" />
+
+                <TextBlock Text="Комната" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <ComboBox x:Name="roomComboBox"
+                  Margin="0,5,0,10"
+                  Height="35" />
+
+                <TextBlock Text="Дата въезда (дд.мм.гггг)" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <DatePicker x:Name="checkInDatePicker"
+                    Margin="0,5,0,10"
+                    Height="35"/>
+                <TextBlock Text="Дата выезда (дд.мм.гггг)" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <DatePicker x:Name="checkOutDatePicker"
+                    Margin="0,5,0,10"
+                    Height="35"/>
+
+                <TextBlock Text="Статус" FontSize="14" FontWeight="Bold" Foreground="#444" />
+                <ComboBox x:Name="StatusComboBox" 
+                    Margin="0,5,0,10"
+                    Height="35"/>
+
+                <Button Content="Добавить"
+                    Width="120"
+                    Height="40"
+                    Margin="0,10,0,0"
+                    Background="#BFAA98"
+                    Foreground="#444"
+                    BorderThickness="0"
+                    FontWeight="Bold"
+                    Cursor="Hand" Click="Button_Add_Booking_Click"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </ScrollViewer>
+
+</Window>
